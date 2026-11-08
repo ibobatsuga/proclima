@@ -80,7 +80,7 @@ export const ScreenAdminCalendar: React.FC = () => {
         subtitle="Validasi Anti Double-Booking Aktif" 
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* Date Selector Banner */}
         <div className="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-3">
           <div className="flex items-center justify-between">

@@ -73,7 +73,7 @@ export const Screen12GiveReview: React.FC = () => {
         onBack={() => setActiveScreen('screen-9')}
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {submitted ? (
           <div className="bg-white rounded-3xl p-6 text-center border border-slate-200 shadow-md space-y-3">
             <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 mx-auto">

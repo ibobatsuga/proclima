@@ -38,7 +38,7 @@ export const Screen9ClientDashboard: React.FC = () => {
         subtitle="Link Publik Pelanggan (Tanpa Perlu Login)" 
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* Live Status Card (Bahasa Awam PRD 6.6) */}
         <div className="bg-navy rounded-3xl p-5 text-white shadow-xl space-y-3 relative overflow-hidden">
           <div className="flex items-center justify-between">

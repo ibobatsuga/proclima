@@ -48,7 +48,7 @@ export const ScreenAdminDashboard: React.FC = () => {
         subtitle="Analisis bisnis & limit kuota usaha AC" 
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* Usaha & Plan Badge */}
         <div className="bg-navy rounded-3xl p-5 text-white shadow-xl space-y-3 relative overflow-hidden">
           <div className="flex items-center justify-between">

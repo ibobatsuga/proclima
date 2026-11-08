@@ -52,7 +52,7 @@ export const Screen11ClientServiceReport: React.FC = () => {
         />
       </div>
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* Action Header (Print / Share) */}
         <div className="no-print flex items-center justify-between bg-white p-3 rounded-2xl border border-slate-200 shadow-sm">
           <span className="text-xs font-bold text-navy">Laporan Servis Resmi</span>

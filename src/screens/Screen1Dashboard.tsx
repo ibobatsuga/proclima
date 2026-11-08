@@ -41,7 +41,7 @@ export const Screen1Dashboard: React.FC = () => {
         subtitle="Sistem Service & Cleaning AC" 
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* Greeting Card with Logo Accent */}
         <div className="bg-navy rounded-2xl p-4 text-white shadow-lg relative overflow-hidden">
           <div className="absolute right-0 top-0 translate-x-4 -translate-y-4 w-32 h-32 bg-white/5 rounded-full pointer-events-none"></div>

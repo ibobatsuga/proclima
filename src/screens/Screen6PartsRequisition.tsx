@@ -68,7 +68,7 @@ export const Screen6PartsRequisition: React.FC = () => {
         onBack={() => setActiveScreen('screen-5')}
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* Notice Card */}
         <div className="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-2">
           <div className="flex items-center gap-2 text-navy font-display font-bold text-sm">
@@ -178,7 +178,7 @@ export const Screen6PartsRequisition: React.FC = () => {
 
       {/* Bottom Sticky Action Bar */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-3 z-30 shadow-2xl safe-area-bottom">
-        <div className="max-w-md mx-auto">
+        <div className="max-w-xl mx-auto">
           <button
             onClick={() => setActiveScreen('screen-7')}
             className="touch-target w-full bg-brandOrange text-white rounded-xl py-3.5 text-sm font-semibold flex items-center justify-center gap-2 shadow active:bg-brandOrange-dark"

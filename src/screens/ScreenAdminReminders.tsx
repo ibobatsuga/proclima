@@ -33,7 +33,7 @@ export const ScreenAdminReminders: React.FC = () => {
         subtitle="Otomasi Retensi Pelanggan Khas ProClima" 
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* WhatsApp Quota & Plan Tracker (PRD FR-17) */}
         <div className="bg-navy rounded-2xl p-4 text-white shadow-sm space-y-3">
           <div className="flex items-center justify-between">

@@ -87,7 +87,7 @@ export const Screen5ServiceReport: React.FC = () => {
         onBack={() => setActiveScreen('screen-3')}
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* Offline Draft Status Bar (Principle 3: Offline is a state) */}
         <div className={`p-3 rounded-2xl text-xs flex items-center justify-between border ${
           isOnline 
@@ -283,7 +283,7 @@ export const Screen5ServiceReport: React.FC = () => {
 
       {/* Bottom Sticky Action Bar */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-3 z-30 shadow-2xl safe-area-bottom">
-        <div className="max-w-md mx-auto flex items-center gap-2">
+        <div className="max-w-xl mx-auto flex items-center gap-2">
           <button
             onClick={() => setActiveScreen('screen-6')}
             className="touch-target flex-1 bg-white border border-slate-300 text-navy rounded-xl py-3.5 text-xs font-semibold flex items-center justify-center gap-1 active:bg-slate-100"

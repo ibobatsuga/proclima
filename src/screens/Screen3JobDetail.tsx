@@ -70,7 +70,7 @@ export const Screen3JobDetail: React.FC = () => {
         onBack={() => setActiveScreen('screen-2')}
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* Status Tracker Banner */}
         <div className="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-3">
           <div className="flex items-center justify-between">
@@ -217,7 +217,7 @@ export const Screen3JobDetail: React.FC = () => {
 
       {/* Bottom Sticky Action Bar (Principle 2: Layout Bottom-heavy) */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-3 z-30 shadow-2xl safe-area-bottom">
-        <div className="max-w-md mx-auto flex items-center gap-2">
+        <div className="max-w-xl mx-auto flex items-center gap-2">
           {activeJob.status === 'SELESAI' ? (
             <button
               onClick={() => setActiveScreen('screen-8')}

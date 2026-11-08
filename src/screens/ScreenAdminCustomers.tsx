@@ -67,7 +67,7 @@ export const ScreenAdminCustomers: React.FC = () => {
         subtitle="Kelola aset unit AC per pelanggan" 
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* Header CTA */}
         <div className="flex items-center justify-between">
           <div>

@@ -52,7 +52,7 @@ export const Screen8JobComplete: React.FC = () => {
         subtitle="Tahap 2: Rantai pengerjaan job tuntas" 
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* Celebration Header Card */}
         <div className="bg-emerald-600 rounded-3xl p-6 text-white text-center shadow-xl relative overflow-hidden">
           <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 shadow-inner">
@@ -150,7 +150,7 @@ export const Screen8JobComplete: React.FC = () => {
 
       {/* Bottom Sticky Action Bar */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-3 z-30 shadow-2xl safe-area-bottom">
-        <div className="max-w-md mx-auto flex items-center gap-2">
+        <div className="max-w-xl mx-auto flex items-center gap-2">
           <button
             onClick={() => setActiveScreen('screen-1')}
             className="touch-target flex-1 bg-white border border-slate-300 text-navy rounded-xl py-3.5 text-xs font-semibold flex items-center justify-center gap-1 active:bg-slate-100"

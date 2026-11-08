@@ -21,52 +21,54 @@ export const TopAppBar: React.FC<{ title: string; subtitle?: string; showBack?: 
   return (
     <header className="bg-navy text-white sticky top-0 z-40 shadow-md">
       {/* Simulation Banner & System Indicator */}
-      <div className="bg-[#1c244f] px-3 py-1 text-[11px] flex items-center justify-between border-b border-white/10">
-        <div className="flex items-center space-x-2">
-          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span className="font-medium text-slate-300 truncate max-w-[170px]">{tenant.name}</span>
-          <span className="bg-brandOrange/20 text-brandOrange border border-brandOrange/30 px-1.5 py-0.2 rounded font-bold text-[9px]">
-            {tenant.plan}
-          </span>
-        </div>
+      <div className="bg-[#1c244f] border-b border-white/10">
+        <div className="max-w-xl mx-auto px-4 py-1 text-[11px] flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span className="font-medium text-slate-300 truncate max-w-[170px]">{tenant.name}</span>
+            <span className="bg-brandOrange/20 text-brandOrange border border-brandOrange/30 px-1.5 py-0.2 rounded font-bold text-[9px]">
+              {tenant.plan}
+            </span>
+          </div>
 
-        {/* Offline / Online Toggle (Design System Principle 3) */}
-        <div className="flex items-center space-x-2">
-          {pendingOfflineSyncCount > 0 && (
-            <button
-              onClick={syncOfflineQueue}
-              className="flex items-center space-x-1 bg-amber-500/20 text-amber-300 px-1.5 py-0.5 rounded text-[10px] active:scale-95"
-              title="Klik untuk sinkronkan data draft offline"
-            >
-              <RefreshCw className="w-3 h-3 animate-spin" />
-              <span>{pendingOfflineSyncCount} Draft</span>
-            </button>
-          )}
-
-          <button
-            onClick={toggleSimulatedOffline}
-            className={`flex items-center space-x-1 px-2 py-0.5 rounded text-[10px] font-semibold transition-all ${
-              isOnline ? 'bg-emerald-500/20 text-emerald-300' : 'bg-rose-500/30 text-rose-300'
-            }`}
-            title="Klik untuk simulasi koneksi internet lapangan"
-          >
-            {isOnline ? (
-              <>
-                <Wifi className="w-3 h-3" />
-                <span>Online</span>
-              </>
-            ) : (
-              <>
-                <WifiOff className="w-3 h-3" />
-                <span>Offline (Draft Lokal)</span>
-              </>
+          {/* Offline / Online Toggle (Design System Principle 3) */}
+          <div className="flex items-center space-x-2">
+            {pendingOfflineSyncCount > 0 && (
+              <button
+                onClick={syncOfflineQueue}
+                className="flex items-center space-x-1 bg-amber-500/20 text-amber-300 px-1.5 py-0.5 rounded text-[10px] active:scale-95"
+                title="Klik untuk sinkronkan data draft offline"
+              >
+                <RefreshCw className="w-3 h-3 animate-spin" />
+                <span>{pendingOfflineSyncCount} Draft</span>
+              </button>
             )}
-          </button>
+
+            <button
+              onClick={toggleSimulatedOffline}
+              className={`flex items-center space-x-1 px-2 py-0.5 rounded text-[10px] font-semibold transition-all ${
+                isOnline ? 'bg-emerald-500/20 text-emerald-300' : 'bg-rose-500/30 text-rose-300'
+              }`}
+              title="Klik untuk simulasi koneksi internet lapangan"
+            >
+              {isOnline ? (
+                <>
+                  <Wifi className="w-3 h-3" />
+                  <span>Online</span>
+                </>
+              ) : (
+                <>
+                  <WifiOff className="w-3 h-3" />
+                  <span>Offline (Draft Lokal)</span>
+                </>
+              )}
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Main Top App Bar */}
-      <div className="px-4 py-3 flex items-center justify-between">
+      <div className="max-w-xl mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center space-x-3">
           {showBack ? (
             <button

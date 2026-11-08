@@ -46,7 +46,7 @@ export const ScreenAdminInvoices: React.FC = () => {
         subtitle="Kelola penagihan jasa servis AC" 
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* KPI Financial Cards */}
         <div className="grid grid-cols-2 gap-3">
           <div className="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm space-y-1">

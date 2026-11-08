@@ -21,7 +21,7 @@ export const BottomNav: React.FC = () => {
   if (currentRoleView === 'CLIENT') {
     return (
       <nav className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 shadow-2xl safe-area-bottom">
-        <div className="max-w-md mx-auto flex items-center justify-around h-16 px-2">
+        <div className="max-w-xl mx-auto flex items-center justify-around h-16 px-2">
           {/* Status Live (Screen 9) */}
           <button
             onClick={() => setActiveScreen('screen-9')}
@@ -85,7 +85,7 @@ export const BottomNav: React.FC = () => {
   if (currentRoleView === 'ADMIN') {
     return (
       <nav className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 shadow-2xl safe-area-bottom">
-        <div className="max-w-md mx-auto flex items-center justify-around h-16 px-2">
+        <div className="max-w-xl mx-auto flex items-center justify-around h-16 px-2">
           {/* Kalender Anti-Bentrok */}
           <button
             onClick={() => setActiveScreen('admin-calendar')}
@@ -148,7 +148,7 @@ export const BottomNav: React.FC = () => {
   // Default: Technician View (Screens 1 to 8)
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 shadow-2xl safe-area-bottom">
-      <div className="max-w-md mx-auto flex items-center justify-around h-16 px-2">
+      <div className="max-w-xl mx-auto flex items-center justify-around h-16 px-2">
         {/* All Jobs / Hari Ini (Screen 2) */}
         <button
           onClick={() => setActiveScreen('screen-2')}

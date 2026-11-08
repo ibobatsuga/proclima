@@ -132,7 +132,7 @@ export const Screen7SignatureSignOff: React.FC = () => {
         onBack={() => setActiveScreen('screen-6')}
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* Bill Breakdown Summary Card */}
         <div className="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm space-y-3">
           <div className="flex items-center justify-between border-b border-slate-100 pb-2">
@@ -225,7 +225,7 @@ export const Screen7SignatureSignOff: React.FC = () => {
 
       {/* Bottom Sticky Action Bar */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-3 z-30 shadow-2xl safe-area-bottom">
-        <div className="max-w-md mx-auto">
+        <div className="max-w-xl mx-auto">
           <button
             onClick={handleCompleteJob}
             disabled={!hasSignature || !agreed}

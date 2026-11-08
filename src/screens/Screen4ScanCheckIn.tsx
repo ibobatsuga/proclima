@@ -53,7 +53,7 @@ export const Screen4ScanCheckIn: React.FC = () => {
         onBack={() => setActiveScreen('screen-3')}
       />
 
-      <div className="p-4 space-y-4 max-w-md mx-auto">
+      <div className="p-4 space-y-4 max-w-xl mx-auto">
         {/* Unit Stiker Context */}
         <div className="bg-navy rounded-2xl p-4 text-white shadow space-y-2">
           <div className="flex items-center justify-between text-xs text-slate-300">
@@ -149,7 +149,7 @@ export const Screen4ScanCheckIn: React.FC = () => {
 
       {/* Bottom Sticky Action Bar */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 p-3 z-30 shadow-2xl safe-area-bottom">
-        <div className="max-w-md mx-auto">
+        <div className="max-w-xl mx-auto">
           {checkInDone ? (
             <button
               onClick={() => setActiveScreen('screen-5')}

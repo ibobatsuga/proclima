@@ -78,12 +78,12 @@ export const AppContent: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-200 flex justify-center items-center sm:py-6">
-      {/* Mobile viewport frame */}
-      <div className="w-full max-w-md bg-surface min-h-screen sm:min-h-[844px] sm:max-h-[920px] sm:rounded-[36px] shadow-2xl relative overflow-y-auto overflow-x-hidden flex flex-col sm:border-[8px] sm:border-slate-800">
+    <div className="min-h-screen bg-surface flex flex-col justify-start relative text-navy antialiased">
+      {/* Full Mobile Web Container */}
+      <div className="w-full flex-1 flex flex-col relative overflow-x-hidden">
         
         {/* Floating Quick 12-Screen Navigator Pill (For Easy Assessment & Demo) */}
-        <div className="fixed sm:absolute top-2 right-2 z-50">
+        <div className="fixed top-2 right-2 z-50">
           <button
             onClick={() => setShowScreenPicker(prev => !prev)}
             className="bg-navy/90 hover:bg-navy text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full shadow-lg backdrop-blur-md flex items-center gap-1.5 border border-white/20 active:scale-95 transition-all"
